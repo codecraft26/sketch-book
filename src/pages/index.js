@@ -1,4 +1,5 @@
 
+import ToolBox from '@/components/Toolbox'
 import Menu from '../components/Menu'
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
     <div>
     sketch Book
       <Menu/>
+      <ToolBox/>
     </div>
   )
 }
