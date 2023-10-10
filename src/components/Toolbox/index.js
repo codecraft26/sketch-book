@@ -1,10 +1,15 @@
 import React from 'react'
 import styles from './index.module.css'
 import { COLORS } from '@/constants'
-const updateBrushSize = (event) => {
+import { useSelector } from 'react-redux'
+const updateBrushSize = (e) => {
+
 }
 
 const ToolBox = () => {
+
+
+  const activeMenuItem=useSelector((state)=>state.menu)
   return (
     <div className={styles.toolboxContainer}>
       <div className={styles.toolItem}>
@@ -25,7 +30,9 @@ const ToolBox = () => {
       <div>
 
         <h4 className={styles.toolText}>
-          Brush size
+          Brush size 
+
+          {activeMenuItem}
         </h4>
 
         <div className={styles.itemContainer}>
