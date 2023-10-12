@@ -3,6 +3,7 @@ import { actionItemClick } from '@/slice/menuSlice'
 import React, { useEffect, useRef ,useLayoutEffect} from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
+
 const Board = () => {
 
     const canvasRef=useRef(null)
@@ -121,6 +122,9 @@ const Board = () => {
         canvas.addEventListener('mousedown',handleMouseDown)
         canvas.addEventListener('mousemove',handleMouseMove)
         canvas.addEventListener('mouseup',handleMouseUp)
+
+
+        
 
 
         return ()=>{
